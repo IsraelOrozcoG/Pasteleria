@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo{
+    background-color: rgb(222, 212, 197);
+    background-image: url('portada.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: bisque;
+}
+
+.navegador{
+    background-color: rgb(198, 180, 156);
+    font-size: 35px;
+}
+
+
+
+.page {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 50px 750px 100px;
+    grid-template-areas:    "logo logo logo" 
+                            "navegador navegador navegador" 
+                            "formulario formulario formulario"
+                            "footer footer footer";
+    grid-gap: 5px;
+    width: calc(100% - 20px);
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    color:black;
+
+}
+
+.logo{
+    grid-area: logo;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.navegador{
+    grid-area: navegador;
+    font-family: 'Dancing Script', cursive;
+}
+
+.formulario{
+    grid-area: formulario;
+    width: 100%;
+    justify-items: center;
+    background-color: rgb(198, 180, 156);
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(90, 73, 65);
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+
+input[type=text], select, textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(90, 73, 65);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  a{    
+    text-decoration: none;
+    color: black; 
+}

@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.logo{
+    background-color: rgb(222, 212, 197);
+    background-image: url('portada.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: bisque;
+}
+
+.navegador{
+    background-color: rgb(198, 180, 156);
+    font-size: 35px;
+}
+
+.menu{
+    background-color: rgb(222, 212, 197);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: "menu_indice menu_indice menu_indice"
+                         "card1 card2 card3";                    
+    grid-gap: 1px;
+    width: calc(100% - 2px);
+}
+
+.menu_indice{
+    grid-area: menu_indice;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/*Tarjetas descriptivas de los pasteles*/
+  .card1, .card2 , .card3 {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+    grid-area: card1,card2,card3;
+    text-align: center;
+    font-family: arial;
+
+    
+  } 
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .descripcion{
+      color: black;
+      font-size: 25px;
+      
+  }
+
+.sabores{
+    background-color: rgb(201, 183, 159);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: "menu_sabor menu_sabor menu_sabor"
+                         "sabor1 sabor2 sabor3";                    
+    grid-gap: 1px;
+    width: calc(100% - 2px);
+}
+
+.menu_sabor{
+    grid-area: menu_sabor;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.sabor1, .sabor2 , .sabor3 {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+    grid-area: sabor1,sabor2,sabor3;
+    text-align: center;
+    font-family: arial;   
+  }
+
+.adornos{
+    background-color: rgb(201, 183, 159);
+    background-color: rgb(201, 183, 159);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: "menu_adorno menu_adorno menu_adorno"
+                         "adorno1 adorno2 adorno3";                    
+    grid-gap: 1px;
+    width: calc(100% - 2px);
+}
+
+.menu_adorno{
+    grid-area: menu_adorno;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.adorno1, .adorno2 , .adorno3 {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    /*margin: auto;*/
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+    grid-area: adorno1,adorno2, adorno3;
+    text-align: center;
+    font-family: arial;   
+  }
+
+.pedido{
+    background-color: rgb(222, 212, 197);
+    font-size: 35px;
+}
+a{    
+    text-decoration: none;
+    color: black; 
+}
+
+img{
+    width:100%;
+}
+
+.direccion, .telefono, .horarios{
+    font-size: 25px;
+}
+.info{
+    background-color: rgb(198, 180, 156);
+    background-color: rgb(201, 183, 159);
+    background-color: rgb(201, 183, 159);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px 50px 50px;
+    
+    grid-template-areas: "contacto contacto" 
+                         "direccion mapa"
+                         "telefonos mapa"
+                         "horarios mapa ";                    
+    grid-gap: 1px;
+    width: calc(100% - 2px);
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.direccion, .telefono , .horarios {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
+    grid-area: direccion, telefonos, horarios;
+    text-align: center;
+    font-family: arial;   
+  }
+
+.mapa{
+      grid-area: mapa;
+      height: 250px;
+      width:95%;
+  }
+
+.footer{
+    background-color: rgb(90, 73, 65);
+}
+
+.page {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 50px 400px 400px 50px 350px 100px  ;
+    grid-template-areas:    "logo logo" 
+                            "navegador navegador" 
+                            "menu menu"
+                            "sabores adornos"
+                            "pedido pedido"
+                            "info info"
+                            "footer footer";
+    grid-gap: 5px;
+    width: calc(100% - 20px);
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    color:black;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.navegador{
+    grid-area: navegador;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.sabores{
+    grid-area: sabores;
+}
+
+.adornos{
+    grid-area: adornos;
+}
+
+.pedido{
+    grid-area: pedido;
+}
+
+.info{
+    grid-area: info;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+@media (max-width: 600px) {
+    .page{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 400px 400px 400px 50px 350px 100px  ;
+    grid-template-areas:    "logo " 
+                            "navegador" 
+                            "menu"
+                            "sabores"
+                            "adornos"
+                            "pedido"
+                            "info"
+                            "footer";
+    grid-gap: 5px;
+    width: calc(100% - 20px);
+    }
+    .direccion, .telefono, .horarios{
+        font-size: 15px;
+    }
+}
+

@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo{
+    background-color: rgb(222, 212, 197);
+    background-image: url('portada.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: bisque;
+}
+
+.navegador{
+    background-color: rgb(198, 180, 156);
+    font-size: 35px;
+}
+
+a{    
+    text-decoration: none;
+    color: black; 
+}
+
+.pedidos{
+    background-color: rgb(198, 180, 156);
+    font-size: 15px;
+}
+
+.footer{
+    background-color: rgb(90, 73, 65);
+}
+
+.page {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 50px 400px 400px 100px  ;
+    grid-template-areas:    "logo " 
+                            "navegador " 
+                            "pedidos"
+                            "existencias"
+                            "footer";
+    grid-gap: 5px;
+    width: calc(100% - 20px);
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    color:black;
+    justify-content: center;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.navegador{
+    grid-area: navegador;
+}
+
+.pedidos{
+    grid-area: pedidos;
+    overflow-x:auto;
+}
+
+.existencias{
+    grid-area: existencias;
+   
+}
+.footer{
+    grid-area: footer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
